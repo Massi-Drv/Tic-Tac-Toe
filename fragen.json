@@ -5,15 +5,36 @@
             "Fragen": [
                 {
                     "Frage": "Lohnt sich in einer Stadt wie Detmold ein Auto bereits ab 1,5 km?",
-                    "Antwort": "Nein"
+                    "Optionen": {
+                        "A": "Ja",
+                        "B": "Nein"
+                    },
+                    "Antwort": {
+                        "text": "Nein, 1,5 km sind in 20 Minuten zu Fuß zu erreichen",
+                        "key":"B"
+                    }
                 },
                 {
                     "Frage": "Detmold hat insgesamt mehr als 350.000 m^2 Grünfläche",
-                    "Antwort": "Ja"
+                    "Optionen": {
+                        "A": "Ja",
+                        "B": "Nein"
+                    },
+                    "Antwort": {
+                        "text": "Ja, 350.000 m^2",
+                        "key":"A"
+                    }
                 },
                 {
                     "Frage": "Detmold erzeugt mehr erneuerbare, als fossile Energie",
-                    "Antwort": "Ja"
+                    "Optionen": {
+                        "A": "Ja",
+                        "B": "Nein"
+                    },
+                    "Antwort": {
+                        "text": "Ja",
+                        "key":"A"
+                    }
                 }
             ]
         },
@@ -22,15 +43,36 @@
             "Fragen": [
                 {
                     "Frage": "Gehört Deutschland zu den Top 10 im Klimaschutz Index (KSI)?",
-                    "Antwort": "Nein, Platz 16"
+                    "Optionen": {
+                        "A": "Ja",
+                        "B": "Nein"
+                    },
+                    "Antwort": {
+                        "text": "Nein, Platz 16",
+                        "key":"B"
+                    }
                 },
                 {
                     "Frage": "Bräuchte es über 7 Mio. neue Bäume für die CO^2 Kompensierung in Deutschland?",
-                    "Antwort": "Ja, 7.475.000"
+                    "Optionen": {
+                        "A": "Ja",
+                        "B": "Nein"
+                    },
+                    "Antwort": {
+                        "text": "Ja, 7.475.000",
+                        "key": "A"
+                    }
                 },
                 {
                     "Frage": "Würde es der natürlichen Ökonomie gut tun, mehr Biodiversität zu integrieren?",
-                    "Antwort": "Nein, Artenvielfalt"
+                    "Optionen": {
+                        "A": "Ja",
+                        "B": "Nein"
+                    },
+                    "Antwort": {
+                        "text": "Nein, Artenvielfalt",
+                        "key":"B"
+                    }
                 }
             ]
         },
@@ -39,15 +81,36 @@
             "Fragen": [
                 {
                     "Frage": "Bebaute Fläche lässt sich mit \"vergrünung\" auf anderen Plätzen ausgleichen",
-                    "Antwort": "Jain"
+                    "Optionen": {
+                        "A": "Ja",
+                        "B": "Nein"
+                    },
+                    "Antwort": {
+                        "text": "Jain",
+                        "key":"A"
+                    }
                 },
                 {
                     "Frage": "Reichen 7 Tage selbst erzeugte Solarenergie aus, um ein ganzes Einfamilienhaus für einen Monat mit Strom zu versorgen?",
-                    "Antwort": "Ja (durchschnittliche Einspeisung: 157.5 kWh/Woche, Bedarf: 83.3 kWh pro Woche)"
+                    "Optionen": {
+                        "A": "Ja",
+                        "B": "Nein"
+                    },
+                    "Antwort": {
+                        "text": "Ja (durchschnittliche Einspeisung: 157.5 kWh/Woche, Bedarf: 83.3 kWh pro Woche)",
+                        "key":"A"
+                    }
                 },
                 {
                     "Frage": "Zement ist der umweltfreundlichste Baustoff",
-                    "Antwort": "Nein"
+                    "Optionen": {
+                        "A": "Ja",
+                        "B": "Nein"
+                    },
+                    "Antwort": {
+                        "text": "Nein",
+                        "key":"B"
+                    }
                 }
             ]
         }
