@@ -7,18 +7,7 @@ class keypad():
         GPIO.setmode(GPIO.BOARD)
 
         # CONSTANTS 
-        if columnCount is 3:
-            self.KEYPAD = [
-                [1,2,3],
-                [4,5,6],
-                [7,8,9],
-                ["*",0,"#"]
-            ]
-
-            self.ROW         = [26,24,23,22]
-            self.COLUMN      = [21,19,10]
-        
-        elif columnCount is 4:
+        if columnCount is 4:
             self.KEYPAD = [
                 [1,2,3,"A"],
                 [4,5,6,"B"],
@@ -99,3 +88,4 @@ if __name__ == '__main__':
      
     # Print the result
     print (digit)
+    #GPIO.cleanup()
