@@ -80,17 +80,6 @@
             "Kategorie": "Sustainable Living",
             "Fragen": [
                 {
-                    "Frage": "Bebaute Fläche lässt sich mit \"vergrünung\" auf anderen Plätzen ausgleichen",
-                    "Optionen": {
-                        "A": "Ja",
-                        "B": "Nein"
-                    },
-                    "Antwort": {
-                        "text": "Jain",
-                        "key":"A"
-                    }
-                },
-                {
                     "Frage": "Reichen 7 Tage selbst erzeugte Solarenergie aus, um ein ganzes Einfamilienhaus für einen Monat mit Strom zu versorgen?",
                     "Optionen": {
                         "A": "Ja",
