@@ -86,33 +86,40 @@ class TicTacToe:
                 move -= 1
                 if self.board[move // 3][move % 3] == " ":
                     return move // 3, move % 3
-            print("Ungültiger Zug. Bitte versuche es erneut.")
-            sleep(0.5)
 
-    def scroll_text(self, text, num_rows=4, num_cols=20, delay=1.0):
+    def scroll_text(self, text, choices, num_rows=4, num_cols=20, delay=2.0):
         pos = 0
+        lines = [text[i:i+num_cols] for i in range(0, len(text), num_cols)]
+        for key in choices:
+            lines.append(f"{key}: {choices[key]}")
+        print(lines)
+        curr_line = 0
         while True:
+            self.lcd.clear()
             for i in range(num_rows):
                 self.lcd.cursor_pos = (i, 0)
-                line_text = text[pos + i * num_cols:pos + (i + 1) * num_cols].ljust(num_cols)
+                line_text = lines[i + curr_line]
                 self.lcd.write_string(line_text)
-            pos += 1
-            if pos > len(text) - num_rows * num_cols:
-                pos = 0
-            sleep(delay)
-
-            key = self.keypad.get_key()
-            if key in ["A", "B"]:
-                return key
+            curr_line += 1
+            if (curr_line + num_rows) > len(lines):
+                curr_line = 0
+            
+            for i in range(20):
+                key = self.keypad.get_key()
+                if key in ["A", "B"]:
+                    return key
+                sleep(delay / 20)
 
     def ask_question(self):
         question_set = self.questions[self.current_question_index // len(self.questions[0]['Fragen'])]
         question = question_set['Fragen'][self.current_question_index % len(question_set['Fragen'])]
         
-        answer = self.scroll_text(question['Frage'])
+        choice = question["Optionen"]
+        answer = self.scroll_text(question['Frage'],choice)
         
         correct_answer = question['Antwort']['key']
-        if (answer == 'A' and correct_answer == 'A') or (answer == 'B' and correct_answer == 'B'):
+        #if (answer == 'A' and correct_answer == 'A') or (answer == 'B' and correct_answer == 'B'):
+        if answer == correct_answer:
             self.lcd.clear()
             self.lcd.cursor_pos = (0, 0)
             self.lcd.write_string("Richtig!")
