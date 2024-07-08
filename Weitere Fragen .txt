@@ -1,0 +1,28 @@
+Weitere Fragen: 
+
+Hier sind sechs weitere Fragen, die auf den bestehenden Kategorien basieren:
+
+Frage: Gibt es in Detmold mehr Fahrradwege als in vergleichbaren Städten?
+Antwort:
+Ja
+
+Frage: Ist Detmold eine Vorreiterstadt in der Nutzung von Solarenergie?
+Antwort:
+Ja
+
+Frage: Ist der Anteil der erneuerbaren Energien in Deutschland höher als 40%?
+Antwort:
+text: Ja
+
+Frage: Ist der CO2-Ausstoß in Deutschland in den letzten zehn Jahren gestiegen?
+Antwort:
+Nein
+
+Frage: Kann ein Haushalt durch Muelltrennung den CO2-Ausstoß um mehr als 10% reduzieren?
+Antwort:
+text: Ja
+
+Frage: Ist die Nutzung von LED-Lampen im Haushalt energieeffizienter als die Nutzung von herkömmlichen Glühbirnen?
+Antwort:
+text: Ja
+
